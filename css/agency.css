@@ -108,6 +108,10 @@ img::-moz-selection {
   background: transparent;
 }
 
+.img-fluid.portfolio{
+    max-width: 200px;
+}
+
 #mainNav {
   background-color: #212529;
 }
@@ -241,7 +245,7 @@ header.masthead .intro-text .intro-heading {
   -webkit-transition: all ease 0.5s;
   transition: all ease 0.5s;
   opacity: 0;
-  background: rgba(254, 209, 54, 0.9);
+  background: rgba(220, 220, 220, 0.5);
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
