@@ -236,18 +236,56 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
+              <div class="col-lg-10 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Tiny Typing</h2>
-                  <p class="item-intro text-muted">Text entry design for a smartwatch with touchscreen area of 1inch by 1inch.<br> <br>Andy Shen & Diana Li & Renhao Hu</p>
+                    <h4>Status: Complete</h4>
+                  <p class="item-intro text-muted">Text entry design for smartwatches.<br> <br>Andy Shen & Diana Li & Renhao Hu</p>
                     
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/TinyTypingFinal.jpg" alt="">
+                <p class="title">Background</p>
+                <p class="content">As the shift to mobile and wearable technologies begins to surface, there is an increasing amount of importance in having a good design for user input. While phone screens may provide enough space for users to type into a keyboard, smartwatches don't have enough space to support a traditional keyboard for users to tap on. We explored this issue by developing an app for touchscreen smartphones to simulate a smartwatch and creating different designs for user input.</p>
+                <p class="content">This project was an assignment for Designing Human-Centered Software, a HCI course at Carnegie Mellon University that teaches fundamental concepts in designing, prototyping, and evaluating user interfaces. </p>
+                    
+                <p class="title">Requirements</p>
+                    <li class="content">Create a text entry method for a smartwatch </li>
+                    <li class="content">Size of the touch area is 1 inch by 1 inch (roughly the same size as the older 38mm Apple Watch. )</li> 
+                    <li class="content">Text entry accuracy must be above 95% </li> 
+                    <li class="content">Optimize for speed (i.e., words per minute) and intuitiveness </li>
+                    <li class="content">The character set only includes ‘a’ through ‘z’ and space. No caps, numbers or punctuation. </li> <br> <br>
+                 
+                <p class="title">Trial Information</p>
+                <p class="content">Each trial consisted of two randomly generated sentences pulled from a corpus that we would have to type (similar to typeracer). When we finished typing the first sentence, we hit the next button and enter the second sentence. After we submitted the second sentence, out speed (words per minute) would be outputted with additional penalties for words that were misspelled. The wpm with penalty was what we used to benchmark the speed of each of our prototypes. </p>
+                    
+                <p class="title">Tech Stack</p>
+                <p class="content">The app was created using <a href="https://processing.org/
+                    "> Processing</a>, an open source graphical library and IDE built for visual design. It uses the Java language with various simplifications. The apps were then run on android phones.</p>
+                    
+                <p class="title">Brainstorming</p>
+                <p class="content">To start off, we began by brainstorming a couple of possible designs we wanted to explore. Some features that we thought we would like to have in our design included autocompletion suggestions and autocorrecting misspelled words to improve our wpm and decrease our error penalty.</p>
+                    
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/Brainstorm1.jpg" alt="">    
+                    
+                <p class="content">Our first idea was to have the keys lined up on the border of the smartwatch and the user would select a letter by sliding their finger towards the edge of the watch at that letter.  </p>
+                    
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/Brainstorm2.jpg" alt="">    
+                
+                <p class="content">Our second idea was to have the keys lined up on the left and right edges of the watch. The first 13 letters of the alphabet would be on the left side while the last 13 letters would be on the right. The user would select a letter by sliding their finger towards up and down the side of the watch. The middle of the screen would then contain suggestions for words that the user may be typing. </p>
+                    
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/Brainstorm3.jpg" alt="">    
+                
+                <p class="content">Our third idea was closer to a traditional qwerty layout. The keyboard layout is the same as a regular keyboard except the p is moved to the third row because of spacing issues. We then separated the keys into groups of three. When a user taps into one of the three grids, swiping in the direction of the letter will result in that letter being output. For example, if a user taps in the middle grid and swipes up, a t will output. We also moved the space and delete keys to the top of the screen.</p>
+                    
+                    
+                <p class="title">Starting Point</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/TinyTyping.jpg" alt="">
+                <p class="content">We were initially given scaffold code that contained a design with the current letter on the top half of the screen and a red button to move backwards a letter and a green button to move forwards a letter. To submit the letter, the user clicks on the current letter. While this design was extremely simple, it would take around 13 clicks in order to find each letter in the worst case, which would take a long time. </p>
+                    
+                    
                   <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Explore</li>
-                    <li>Category: Graphic Design</li>
+                    <li>Date: November 2018</li>
+                    <li>Category: HCI Design</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
@@ -272,7 +310,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
+<!--                <div class="modal-body">-->
                   <!-- Project Details Go Here -->
                   <h2 class="text-uppercase">Project Name</h2>
                   <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
@@ -286,7 +324,7 @@
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>
                     Close Project</button>
-                </div>
+<!--                </div>-->
               </div>
             </div>
           </div>
