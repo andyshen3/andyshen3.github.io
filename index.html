@@ -53,7 +53,7 @@
     <header class="masthead">
       <div class="container">
         <div class="intro-text">
-          <div class="intro-lead-in"> I'm Andy Shen, a senior at Carnegie Mellon University studying Electrical & Computer Engineering. <br><br>My projects mainly revolve around Software Development and Human-Computer Interaction.<br><br>In my free time, I enjoy following <a href ="https://www.nba.com/">NBA basketball</a>, <a href ="https://www.strava.com/athletes/38003227">running</a>, and <a href="https://medium.com/topic/technology"> learning about new technologies.</a></div>
+          <div class="intro-lead-in"> I'm Andy Shen, a senior at Carnegie Mellon University studying Electrical & Computer Engineering. <br><br>My projects mainly revolve around Software Development and Human-Computer Interaction.<br><br>In my free time, I enjoy following <a class = "nba" href ="https://www.nba.com/">NBA basketball</a>, <a class = "running" href ="https://www.strava.com/athletes/38003227">running</a>, and <a class="tech" href="https://medium.com/topic/technology"> reading about new technologies.</a></div>
           
         </div>
       </div>
@@ -262,26 +262,50 @@
                 <p class="content">The app was created using <a href="https://processing.org/
                     "> Processing</a>, an open source graphical library and IDE built for visual design. It uses the Java language with various simplifications. The apps were then run on android phones.</p>
                     
+                <p class="title">Starting Point</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/TinyTypingScaffold.jpg" alt="">
+                <p class="content">We were initially given scaffold code that contained a design with the current letter on the top half of the screen and a red button to move backwards a letter and a green button to move forwards a letter. To submit the letter, the user clicks on the current letter. <br> <br>
+                Some of the biggest observations we made with this design were the simplicity and the number of clicks required to submit a letter. While this design was extremely simple and intuitive, it takes around 13 clicks in order to find each letter in the worst case. Since wpm is correlated with number of clicks, we wanted to create a design that would maintain the simplicity but reduce the number of clicks required to get to each letter.
+                    
+                After testing the scaffold code, we found that we could achieve roughly 2.4 wpm with that design.</p>
+                
+                
+                    
                 <p class="title">Brainstorming</p>
-                <p class="content">To start off, we began by brainstorming a couple of possible designs we wanted to explore. Some features that we thought we would like to have in our design included autocompletion suggestions and autocorrecting misspelled words to improve our wpm and decrease our error penalty.</p>
+                <p class="content">To start off, we began by brainstorming a couple of possible designs we wanted to explore. Some features that we thought we could potentially have in our design included autocompletion suggestions, handwriting recognition, and autocorrecting misspelled words to improve our wpm and decrease our error penalty.</p> <br>
                     
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/Brainstorm1.jpg" alt="">    
                     
-                <p class="content">Our first idea was to have the keys lined up on the border of the smartwatch and the user would select a letter by sliding their finger towards the edge of the watch at that letter.  </p>
+                <p class="title">Design 1</p>
+                <p class="content">Our first idea was to have the keys lined up on the border of the smartwatch and the user would select a letter by sliding their finger towards the edge of the watch at that letter. The delete key would be located at the bottom left of the screen and the space key would be at the bottom right. The user confirms the input by tapping on the middle of the screen. This experimental design was inspired by the fact that we wanted to utilize the entirety of the space that we had available to work with. </p> <br>
+                    
+                
                     
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/Brainstorm2.jpg" alt="">    
-                
-                <p class="content">Our second idea was to have the keys lined up on the left and right edges of the watch. The first 13 letters of the alphabet would be on the left side while the last 13 letters would be on the right. The user would select a letter by sliding their finger towards up and down the side of the watch. The middle of the screen would then contain suggestions for words that the user may be typing. </p>
+                <p class="title">Design 2</p>
+                <p class="content">Our second idea was to have the keys lined up on the left and right edges of the watch. The first 13 letters of the alphabet and the delete key would be on the left side while the last 13 letters and the space key would be on the right. The user would select a letter by sliding their finger towards up and down the side of the watch. The middle of the screen would then contain suggestions for words that the user may be typing. We came up with this concept when we thought about the switches on analog watches and wanted to see if we could incorporate them into our design. </p> <br>
                     
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/Brainstorm3.jpg" alt="">    
                 
-                <p class="content">Our third idea was closer to a traditional qwerty layout. The keyboard layout is the same as a regular keyboard except the p is moved to the third row because of spacing issues. We then separated the keys into groups of three. When a user taps into one of the three grids, swiping in the direction of the letter will result in that letter being output. For example, if a user taps in the middle grid and swipes up, a t will output. We also moved the space and delete keys to the top of the screen.</p>
+                <p class="title">Design 3</p>
+                <p class="content">Our third idea was closer to a traditional qwerty layout. The keyboard layout is the same as a regular keyboard except the p is moved to the third row because of spacing issues. We then separated the keys into groups of three. When a user taps into one of the three grids, swiping in the direction of the letter will result in that letter being output. For example, if a user taps in the middle grid and swipes up, a t will output. We also moved the space and delete keys to the top of the screen. While this design doesn't bring any drastic changes to the table, we wanted to see how effective a more traditional keyboard layout would do on a smartwatch interface.</p> <br>
+                    
+                <p class="title">Prototyping Process</p>
+                <p class="content">Once we had our design ideas, we created prototypes and performed user testing on each iteration. In total, we created 5 prototypes. We ended up not implementing the first design because the screen wasn't big enough to fit the number of letters that we drew out in our design. The different prototypes can be seen here: 
+                    <video width="768" height="432" controls>
+                    <source src="media/TinyTyping.mp4" type="video/mp4">
+                    </video> </p> <br> 
+                    
+                <p class="title">Testing Results</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/TestingResults.jpg" alt=""> <br>
                     
                     
-                <p class="title">Starting Point</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/TinyTyping.jpg" alt="">
-                <p class="content">We were initially given scaffold code that contained a design with the current letter on the top half of the screen and a red button to move backwards a letter and a green button to move forwards a letter. To submit the letter, the user clicks on the current letter. While this design was extremely simple, it would take around 13 clicks in order to find each letter in the worst case, which would take a long time. </p>
-                    
+                <p class="title">Takeaways</p>
+                <li class="content">Traditional qwerty design is effective - People have become accustomed to the layout, making qwerty faster to use </li> <br>
+                <li class="content">Minimize number of clicks - The more clicks required, the longer users will take to complete a task.</li> <br>
+                <li class="content">You are not like the users - Our wpm was significantly higher than our testers, related to expert blindness.</li> <br>
+                <li class="content">Smartwatch screens are not too small for typing - While slower than keyboard, we still managed to achieve over 10 wpm, which can be further improved with additional optimizations. </li> <br> <br>
+                 
                     
                   <ul class="list-inline">
                     <li>Date: November 2018</li>

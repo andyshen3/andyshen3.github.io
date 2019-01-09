@@ -535,6 +535,18 @@ header.masthead .intro-text .intro-heading {
     font-family: "Lato", "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.nba{
+    color: #ef5567;
+}
+
+.running{
+    color:#3CB371	;
+}
+
+.tech{
+    color:#1E90FF;
+}
+
 @media (min-width: 992px) {
   .timeline > li {
     min-height: 150px;
