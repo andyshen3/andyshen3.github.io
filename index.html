@@ -361,17 +361,57 @@
           </div>
           <div class="container">
             <div class="row">
-              <div class="col-lg-8 mx-auto">
+              <div class="col-lg-10 mx-auto">
                 <div class="modal-body">
                   <!-- Project Details Go Here -->
-                  <h2 class="text-uppercase">Project Name</h2>
-                  <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                  <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                  <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                  <ul class="list-inline">
-                    <li>Date: January 2017</li>
-                    <li>Client: Southwest</li>
-                    <li>Category: Website Design</li>
+                  <h2 class="text-uppercase">Galaxy Defenders</h2>
+                  <p class="item-intro text-muted">A spinoff of the retro arcade game Space Invaders</p>
+                    
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/GalaxyDefenders.jpg" alt="">
+                    <p><a class = "link" href="https://www.youtube.com/watch?v=NtuwgvEgJS4">View Project Video</a></p>
+                    
+                <p class="title">Background</p>
+                <p class="content">This project was my term project for Fundamentals of Programming, an introductory computer science course at Carnegie Mellon University that teaches fundamental of programming with emphasis on producing clear code using top-down design, informal analysis, and effective testing and debussing. </p>
+                    
+                <p class="title">Tech Stack</p>
+                <p class="content">I created the game in Python, along with <a class ="link" href="https://www.pygame.org/news">Pygame</a>, a cross-platform set of Python modules that contains computer graphics and sound libraries for Python. </p>
+                    
+                <p class="title">Game Rules</p>
+                <p class="content">The main objective of the game is to progress through the first four levels by defeating enemies and then beating the boss on the fifth level. The player defeats enemies by shooting bullets at the enemies. If the player gets hit by an enemy or by an enemy bullet, the player loses a life. The game ends once the player has 0 lives left or the player defeats the boss. </p>
+                    
+                <p class="title">Game Features</p>
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/GalaxyDefendersEnemies.jpg" alt="">
+                <p class="content">There are four different types of basic enemies that show up as the player progresses through the game. Each of them have different movement patterns and abilities depending on what type of enemy it is.</p> <br> <br>
+                    
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/GalaxyDefendersBoss.jpg" alt="">
+                    <p class="content">Once the player reaches level five, the final boss appears. Depending on the amount of health the boss currently has, it will be in a different mode. The different modes include: </p>
+                    <li class="content">Dodge mode - Boss tries to dodge the player's bullets while firing back some bullets.</li>
+                    <li class="content">Tracker mode - Boss's bullets become homing and fires lines of three bullets at the player.</li>
+                    <li class="content">Collision mode - Boss moves at a high speed downwards towards the player.</li>
+                    <li class="content">Shooter mode - Boss shoots out a large number of bullets in front, to the left, and to the right of it.</li> <br> <br>
+                
+                    <img class="img-fluid d-block mx-auto" src="img/portfolio/GalaxyDefendersPowerUp.jpg" alt="">
+                  
+                      <p class="content">Throughout the duration of the game, powerups may randomly fall from the screen. The two different categories of powers are weapon upgrades and health packs. Weapon upgrades can allow the player to fire multiple bullets or switch weapons to a laser that ignores bullet collision with enemy bullets. Health packs restore one health to the player. </p> <br> <br>
+                    
+                <p class="title">Potential Add-on Features for the Future</p>
+                
+                <li class="content">Sockets to support multiplayer online mode.</li> <br> 
+                <li class="content">Additional Powerups such as movement manipulation or a bomb that could clear the map.</li> <br>
+                <li class="content">High score table to track scores across multiple plays.</li>
+                <br> <br>    
+                      
+                    
+                <p class="title">Takeaways</p>
+                
+                <li class="content">Object oriented programming principles - Principles of OOP such as inheritance helps with code reuse and modularity.</li> <br> 
+                <li class="content">Balancing gameplay is difficult - Challenging to make the game fun and challenging and fair at the same time.</li> <br>
+                <li class="content">Managing a large codebase is challenging - Separating code into different modules was more effective than a monolith.</li>
+                <br> <br>    
+                      
+                  <ul class="list-inline">    
+                    <li>Date: November 2015</li>
+                    <li>Category: Software Development</li>
                   </ul>
                   <button class="btn btn-primary" data-dismiss="modal" type="button">
                     <i class="fas fa-times"></i>

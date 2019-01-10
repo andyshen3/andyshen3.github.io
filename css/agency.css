@@ -531,6 +531,14 @@ header.masthead .intro-text .intro-heading {
     
 }
 
+.link{
+    color:#1E90FF
+}
+
+.link:hover{
+    text-decoration: none;
+}
+
 .content{
     font-family: "Lato", "Museo Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
